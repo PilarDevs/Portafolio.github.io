@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin: 20px;
+        }
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px; /* Baja un poco las tarjetas */
+        }
+        .tarjeta {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 280px; /* Se aumentó un poco el tamaño */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinea correctamente los textos */
+        }
+        .tarjeta:hover {
+            transform: scale(1.05);
+        }
+        .tarjeta img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .tarjeta h2 {
+            margin: 15px 0 10px;
+        }
+        .tarjeta a {
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .boton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Proyectos Destacados</h1>
+    <div class="contenedor">
+        <div class="tarjeta">
+            <img src="imagenes/{4A16ADF3-3A24-4D90-BF52-DB1256D0537B}.png" alt="Proyecto 1">
+            <h2>App De Escritura y Lectura</h2>
+            <a href="https://pilardevs.github.io/HistoryMyApp/" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="tarjeta">
+            <img src="imagenes/{F44A8EE5-508A-4BB5-8DE3-C2FFD44E5688}.png" alt="Proyecto 2">
+            <h2>Proyecto de Maquetación Web</h2>
+            <a href="https://pilardevs.github.io/Buggary.Pilar.github.io.com/" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="tarjeta">
+            <img src="imagenes/{1D9210D8-5760-4727-9636-1C940D3AEDA4}.png" alt="Proyecto 3">
+            <h2>Videojuego 2D con C# y Unity</h2>
+            <a href="https://drive.google.com/drive/folders/1N6YSjk-Z5qujln__PUu8oiqaT81wTjXr?usp=sharing" target="_blank">Ver Proyecto</a>
+        </div>
+    </div>
+
+    <!-- Botón de regreso al index -->
+    <a href="index.html" class="boton">Regresar al Inicio</a>
+
+</body>
+</html>
